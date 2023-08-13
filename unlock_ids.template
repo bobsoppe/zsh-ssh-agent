@@ -1,0 +1,6 @@
+# This file will help unlock the ssh private key
+# KEY is the filename, VALUE is the command to get the exact password
+# default location would be $HOME/.ssh/unlock_ids
+
+# here an example of rbw ...
+id_ed25519="rbw get --field=id 902409d9-3333-4e47-5578-2d022953449e --raw | jq '.data.password' -r"
